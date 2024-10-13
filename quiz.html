@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Carros</title>
+    <style>
+        body {
+            background-image: url(imagens/fundo6.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            text-align: center;
+        }
+        section {
+            text-align: center;
+        }
+        img {
+            width: 20%;
+            height: auto;
+        }
+        label {
+            display: block;
+        }
+        #image01 img {
+            display: none; /* A imagem começa oculta */
+            margin: 0 auto; /* Centraliza a imagem */
+        }
+        .image-container {
+            text-align: center; /* Centraliza o contêiner da imagem */
+            margin-top: 20px; /* Adiciona um espaço acima da imagem */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/1_chnnCiC2ozMfPpuXNoIjjw.png" alt="">
+        <h1>1° passo</h1>
+        <p>para podermos fazer uma análise mais precisa. Precisamos que responda as perguntas abaixo</p>   
+    </header>
+    <section>
+        <form id="contactForm" action="">
+            <label for="nome">Digite seu nome</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="numerodocartão">Número do Cartão de Crédito</label>
+            <input type="text" id="numerodocartão" name="numerodocartão" required>
+
+            <label for="datadevalidade">Data de Validade</label>
+            <input type="number" name="datadevalidade" id="datadevalidade" required>
+
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" required>
+        </form>
+    </section>
+
+    <section id="image01" class="image-container">
+        <button type="button" onclick="mostrarImagem()">Pronto</button>
+        <p>Você é...</p>      
+        <br>
+        <img src="imagens/Mater.png" alt="marte">
+        
+    </section>
+
+    <script>
+        function mostrarImagem() {
+            document.querySelector('#image01 img').style.display = 'block'; // Mostra a imagem
+        }
+    </script>
+</body>
+</html>

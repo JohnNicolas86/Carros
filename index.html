@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual personagem?</title>
+</head>
+<style>
+    body{
+        background-image: url(imagens/fundo6.jpg);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        list-style: none; 
+        background-color: darkgrey;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        text-align: center;
+        display: flex;
+        list-style: none; 
+        background-color: darkgrey;
+    }
+    ul{
+    list-style: none;
+    padding: 0;
+    }
+    li{
+    display: inline;
+    margin: 0 30px;
+    font-size: 20px;
+    }
+
+    section{
+    text-align: center;
+    }
+    #imgcarros{
+    width: 40%;
+    height: 40%;
+    margin-top: 2.5%;
+    }
+
+</style>
+<body>
+    <header>
+        <ul>
+            <li id="lista02"><a href="#informacoes">informações</a></li>
+            <li id="lista01"><a href="#quiz">quiz</a></li>
+            <li id="lista03"><a href="#rodape">contato</a></li>
+
+        </ul>
+    </header>
+        <section>
+            <img id="imgcarros" src="imagens/1_chnnCiC2ozMfPpuXNoIjjw.png" alt="Carros Disney">
+        </section>
+        <section id="informacoes">
+            <h1>Qual personagem do carros você seria?</h1>
+            <p> Os personagens dos resultados são personagens do filme Carros da Disney.
+                os personagens presentes são Relâmpago Mcqueen, Tom Mate,Sally Carrera,Strip Weathers,Doc Hudson,Mack,Chick Hicks e Ramone </p>
+        </section>
+    <section id="quiz">
+        <a id="quiz" href="quiz.html"><button>Iniciar Quiz</button></a>
+    </section>
+    <br>
+    <footer id="rodape">
+        <div class="footer-content">
+            <div class="contact-info">
+                <img src="imagens/Dtafalonso-Android-L-WhatsApp.48.png" alt="WhatsApp" class="whatsapp-icon">
+                <p>(19) 99899-9899
+                    <br>
+                    Entre em contato conosco através do WhatsApp
+                </p> 
+                <p><small>by: John Nicolas</small></p>              
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
